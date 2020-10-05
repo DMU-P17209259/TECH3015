@@ -1,0 +1,17 @@
+.menu {
+  background-color: red;
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.menu a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 17px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
