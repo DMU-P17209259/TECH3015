@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Music Page</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./image/matty.ico"/>
+    <link rel="stylesheet" type="text/css" href="Music.CSS">
+
+  </head>
+
+  <body>
+
+    <header>
+
+
+
+      <div id="backgroundimage">
+        <a href="Homepage.html" class='neon'>The 1975</a>
+
+      <div id="socials">
+
+      <div>
+        <a href="https://www.facebook.com/the1975/" target="_blank" class="links"/>
+        <img src="./image/facebook.png" class="buttons" alt="facebook"/>
+      </div>
+
+      <div>
+        <a href="https://twitter.com/the1975" target="_blank" class="links"/>
+        <img src="./image/twitter.png" class="buttons" alt="twitter"/>
+      </div>
+
+      <div>
+        <a href="https://www.instagram.com/the1975/" target="_blank" class="links"/>
+        <img src="./image/instagram.png" class="buttons" alt="instagram"/>
+      </div>
+
+      <div>
+        <a href="https://www.youtube.com/user/The1975music" target="_blank" class="links"/>
+        <img src="./image/youtube.png" class="buttons" alt="youtube"/>
+      </div>
+
+       <div>
+         <a href="https://open.spotify.com/artist/3mIj9lX2MWuHmhNCA7LSCW" target="_blank" class="links"/>
+        <img src="./image/spotify.png" class="buttons" alt="spotify"/>
+      </div>
+
+      </div>
+
+    </div>
+
+      <ul>
+        <li><a href="Homepage.html"><id="home" >Home Page</a></li>
+        <li><a href="Music.html"><id="Music" class="active" >Music</a></li>
+        <li><a href="Store.html" ><id="Store">Store</a></li>
+        <li><a href="Tour.html" ><id="Tour">Tour</a></li>
+      </ul>
+
+    </header>
+
+<div id="mainbody">
+
+    <div>
+      <video id="girls" width="720px" controls poster="./image/the1975girls.png" alt="the 1975 girls">
+        <source src="./video/girls.ogv" type="video/ogg">
+        <source src="./video/girls.WebM" type="video/webm">
+        <source src="./video/girls.mp4" type="video/mp4">
+      <p>Your browser does not support the video <a href="https://www.vevo.com/watch/the-1975/girls/GBUV71301559">element</a>.</p>
+    </div>
+
+ <div>
+   <p id="news"> "The 1975 have sparked speculation that their third album ‘Music For Cars’ could be coming soon, as they prepare for their “next phase”. The band
+     released second record ‘I Like It When You Sleep, for You Are So Beautiful yet So Unaware of It’ in 2016. It was named as NME‘s best record of that year.
+     An EP called ‘Music For Cars’ was released in 2013 and that band have confirmed that their next record will also go by that title." </p>
+    <img id="nme" src="./image/nme.png"/>
+    <div>
+      <p id="release"> Until Album Release </p>
+
+    </div>
+</div>
+
+
+
+    <div id="playlist">
+
+ <iframe src="https://open.spotify.com/embed/user/hvnthomson/playlist/06AyAiwlSPdYWunyzETLFd" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+
+   </div>
+
+
+
+   <div id="countdown">
+  <div id='tiles'></div>
+  <div class="labels">
+    <li>Days</li>
+    <li>Hours</li>
+    <li>Mins</li>
+    <li>Secs</li>
+  </div>
+</div>
+</div>
+
+
+
+    <footer class="footer">
+      <ul>
+        <li><a href="https://www.facebook.com/the1975/" target="_blank"><id="facebook" >Facebook</a></li>
+        <li><a href="https://twitter.com/the1975" target="_blank"><id="twitter" >Twitter</a></li>
+        <li><a href="https://www.instagram.com/the1975/" target="_blank"><id="Instagram">Instagram</a></li>
+        <li><a href="https://itunes.apple.com/gb/artist/the-1975/542640016" target="_blank"><id="iTunes" >itunes</a></li>
+        <li><a href="https://open.spotify.com/artist/3mIj9lX2MWuHmhNCA7LSCW" target="_blank"><id="Spotify">spotify</a></li>
+      </ul>
+
+
+
+      <div id="footerimg"/>
+
+      <audio id="audiofiles" controls loop autoplay>
+        <source src="./music/somebodyelse.mp3" type="audio/mpeg">
+        <source src="./music/somebodyelse.wav" type="audio/wav">
+        <source src="./music/somebodyelse.ogg" type="audio/ogg">
+        </audio>
+
+        <img id="copyright" src="./image/copyright.png"/>
+
+
+          <form id="forms" name="form1" method="GET" action="Subscribe.html" target="_blank" class="bk">
+            <fieldset>
+            <p align="center" class="txt">Subscribe E-mail:<br>
+              <br>
+              <input name="email" type="text" size="12" class="txtbox">
+              <br> <br>
+              <input type="submit" name="Submit" value="Go" class="button">
+            </p>
+            </fieldset>
+          </form>
+
+    </footer>
+
+
+
+   <script>
+   var target_date = new Date().getTime() + (1000*3600*48); // set the countdown date
+   var days, hours, minutes, seconds; // variables for time units
+
+   var countdown = document.getElementById("tiles"); // get tag element
+   console.log(countdown);
+   getCountdown();
+
+   setInterval(function () { getCountdown(); }, 1000);
+
+   function getCountdown(){
+
+   	// find the amount of "seconds" between now and target
+   	var current_date = new Date().getTime();
+   	var seconds_left = (target_date - current_date) / 1000;
+
+   	days = pad( parseInt(seconds_left / 86400) );
+   	seconds_left = seconds_left % 86400;
+
+   	hours = pad( parseInt(seconds_left / 3600) );
+   	seconds_left = seconds_left % 3600;
+
+   	minutes = pad( parseInt(seconds_left / 60) );
+   	seconds = pad( parseInt( seconds_left % 60 ) );
+
+   	// format countdown string + set tag value
+   	countdown.innerHTML = "<span>" + days + "</span><span>" + hours + "</span><span>" + minutes + "</span><span>" + seconds + "</span>";
+   }
+
+   function pad(n) {
+   	return (n < 10 ? '0' : '') + n;
+   }
+   </script>
+  </body>
+</html>

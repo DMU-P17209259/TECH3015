@@ -1,0 +1,317 @@
+body {
+  margin: 0;
+  cursor: url('./image/matty.ico'), default;
+}
+
+header {
+  cursor: url('./image/matty.ico'), default;
+}
+
+footer {
+cursor: url('./image/matty.ico'), default;
+}
+
+ul{
+
+  list-style-type: none;
+
+  margin: 0;
+
+  padding: 0;
+
+
+  overflow: hidden;
+
+  background-color: #87CEEB;
+
+  display: flex;
+
+}
+
+
+li {
+
+  display: inline-block;
+
+  flex-grow: 1;
+
+}
+
+
+li a:hover{
+
+  background-color:#73B1B7;
+
+  transition: background-color 0.2s;
+
+}
+
+
+.active{
+
+  color: #FFA07A;
+
+
+
+}
+
+.active:hover{
+  font-weight: bold;
+}
+
+.footer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.construction {
+    display: block;
+    background-color: #696969;
+    text-align: center;
+    padding: ;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-decoration: none;
+    font-family: 'century gothic';
+    text-transform: uppercase;
+    font-size: 70px;
+    letter-spacing: -3px;
+    color: white;
+    font-weight: lighter;
+    transition: background-color 0.2s;
+    margin-top: 200px;
+    width: 700px;
+    margin-left: 600px;
+    margin-bottom: 200px;
+    border: solid 5px #ffa07a;
+  }
+
+
+li a{
+
+  display: block;
+
+  background-color: lightblue;
+
+  text-align: center;
+
+  padding: 14px 16px;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  text-decoration: none;
+
+  font-family: 'century gothic';
+  text-transform: uppercase;
+
+  color: white;
+  font-size: 30px;
+  font-weight: lighter;
+  letter-spacing: -3px;
+
+
+  transition: background-color 0.2s;
+
+}
+
+
+.neon {
+
+    font-family: 'beon';
+
+    text-decoration: none;
+
+    display: block;
+    text-align: center;
+
+
+
+    color: #FFDAB9;
+
+    text-shadow: 0 0 0 transparent, 0 0 10px #FFA07A,
+    0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #FFA07A,
+    0 0 100px #FFA07A, 0 0 200px #FFA07A, 0 0 300px #FFA07A,
+    0 0 500px #FFA07A, 0 0 1000px #ff003c;
+
+    font-size: 600%;
+
+    letter-spacing: 15px;
+
+    animation: neon 0.01s infinite alternate;
+    margin: 0;
+
+  }
+
+  .bk {
+  	background-color: lightblue;
+  	border: 1px dashed white;
+  	padding: 0;
+  	width: 300px;
+    height: 100px;
+  	margin: 0px;
+    float: right; }
+
+  .txt {
+  	font-family: 'century gothic';
+  	font-size: 10px;
+  	color: #696969;
+    height: 80px; }
+
+  .txtbox {
+  	background-color: #FFFFFF;
+  	border: 1px solid #CCCCCC;
+  	padding: 0;
+  	font-family: Verdana, Arial, Helvetica, sans-serif;
+  	font-size: 12px; }
+
+  .button {
+  	background-color: #FFA07A;
+  	border: 1px solid #CCCCCC;
+  	padding: 0;
+  	color: #fff;
+  	font-family: Verdana, Arial, Helvetica, sans-serif;
+  	font-size: 12px;
+    transition: transform .2s;
+  }
+
+  .button:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+
+
+
+
+
+
+  fieldset {
+  	border: 3px solid #fff;
+  	margin: 0;
+  	padding: 13;
+    height: 80px;}
+
+
+
+#backgroundimage {
+  background-image: url("./image/headerimage.jpg");
+  background-size: contain;
+  background-position: center;
+  height: 250px;
+  line-height: 250px;
+
+}
+
+#footerimg {
+  background-image: url("./image/footer.jpg");
+  background-size: contain;
+  background-position: center;
+  height: 175px;
+
+
+}
+
+#socials {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  height: 200px;
+  display: flex;
+
+}
+
+#audiofiles {
+  padding-top: 10px;
+  padding-left: 70px;
+  padding-bottom: 10px;
+  position: static;
+}
+
+#forms {
+  margin-top: 30px;
+  margin-right: 70px;
+}
+
+#forms2 {
+  text-align: center;
+}
+
+
+#copyright {
+  padding-top: 50px;
+  padding-left: 500px;
+  position: static;
+}
+
+#silentvideo {
+  position: absolute;
+  overflow: hidden;
+  z-index: -100;
+  height: 100%;
+  width: 100%;
+}
+
+#mainbody {
+ display: flex;
+ padding-bottom: 30px;
+}
+
+.links {
+  margin: 0px;
+  padding: 0px;
+}
+
+.buttons {
+  position: relative;
+  display: flex;
+  z-index: 1;
+  height: 60px;
+  width: 60px;
+}
+
+#popup_this {
+    top: 50%;
+    right: 40%;
+    text-align:center;
+    margin-top: -50px;
+    margin-left: -100px;
+    position: fixed;
+    background: lightblue;
+    padding: 30px;
+}
+.b-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    color: #fff;
+    background: #lightblue;
+    padding: 5px 10px;
+}
+
+h3 {
+  font-family: 'century gothic';
+}
+
+#here {
+  font-family: 'century gothic'
+}
+
+
+@font-face{
+
+font-family: 'beon';
+
+src: url('beon/Beon.otf');
+
+}
+
+
+@keyframes neon {
+
+    70% {
+
+      opacity: 0.80;
+
+    }

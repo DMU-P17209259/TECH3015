@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="Home.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./image/matty.ico"/>
+  </head>
+  <body>
+
+    <header>
+    <div id="popup_this">
+          <span class="button b-close">
+              <span>X</span>
+          </span>
+          <h3>Subscribe to our Newsletter:</h3>
+          <form id="forms2" name="form1" method="GET" action="Subscribe.html" target="_blank" class="bk">
+            <fieldset>
+            <p align="center" class="txt">Subscribe E-mail:<br>
+              <br>
+              <input name="email" type="text" size="12" class="txtbox">
+              <br> <br>
+              <input type="submit" name="Submit" value="Go" class="button">
+            </p>
+            </fieldset>
+          </form>
+      </div>
+
+    <div id="backgroundimage">
+
+  <div id="socials">
+  <div>
+    <a href="https://www.facebook.com/the1975/" target="_blank" class="links">
+    <img src="./image/facebook.png" class= "buttons" alt="Facebook">
+  </div>
+  <div>
+    <a href="https://twitter.com/the1975" target="_blank" class="links">
+    <img src="./image/twitter.png" class="buttons" alt="Twitter">
+  </div>
+  <div>
+    <a href="https://www.instagram.com/the1975/" target="_blank" class="links">
+    <img src="./image/instagram.png" class="buttons" alt="Instagram">
+  </div>
+  <div>
+    <a href="https://open.spotify.com/artist/3mIj9lX2MWuHmhNCA7LSCW" target="_blank" class="links">
+    <img src="./image/spotify.png" class= "buttons" alt="Spotify">
+  </div>
+  <div>
+    <a href="https://www.youtube.com/user/The1975VEVO" target="_blank" class="links">
+    <img src="./image/youtube.png" class="buttons" alt="YouTube" >
+  </div>
+  </div>
+
+      <a id="homelink" href="Homepage.html" class='neon'>
+        The 1975
+      </a>
+  </div>
+  <ul>
+    <li><a href="Homepage.html"><id="home" class="active">Home Page</a></li>
+    <li><a href="Music.html"><id="Music" >Music</a></li>
+    <li><a href="Store.html" ><id="Store">Store</a></li>
+    <li><a href="Tour.html" ><id="Tour">Tour</a></li>
+  </ul>
+
+</header>
+
+<div id="mainbody">
+ <video autoplay muted loop id="silentvideo">
+   <source src="./video/girls.ogv" type="video/ogg">
+   <source src="./video/girls.WebM" type="video/webm">
+   <source src="./video/girls.mp4" type="video/mp4">
+ <p>Your browser does not support the video <a href="https://www.vevo.com/watch/the-1975/girls/GBUV71301559">element</a>.</p>
+ </video>
+</div>
+
+<div class= "construction">
+  <a>
+    Under Construction
+  </a>
+</div>
+
+  <footer class= 'footer'>
+    <ul>
+      <li><a href="https://www.facebook.com/the1975/" target="_blank"><id="Facebook">Facebook</a></li>
+      <li><a href="https://twitter.com/the1975" target="blank_"><id="Twitter" >Twitter</a></li>
+      <li><a href="https://www.instagram.com/the1975/" target="blank_"><id="Instagram" >Instagram</a></li>
+      <li><a href="https://itunes.apple.com/gb/artist/the-1975/542640016" target="blank_"><id="iTunes" >iTunes</a></li>
+      <li><a href="https://open.spotify.com/artist/3mIj9lX2MWuHmhNCA7LSCW" target="blank_"><id="Spotify">Spotify</a></li>
+    </ul>
+    <div id="footerimg" >
+    <audio id="audiofiles" controls loop autoplay>
+      <source src="./music/somebodyelse.mp3" type="audio/mpeg">
+      <source src="./music/somebodyelse.ogg" type="audio/ogg">
+      <source src="./music/somebodyelse.wav" type="audio/wav">
+    </audio>
+    <img id="copyright" src="./image/copyright.png"/>
+      <form id="forms" name="form1" method="GET" action="Subscribe.html" target="_blank" class="bk">
+                  <fieldset>
+                  <p align="center" class="txt">Subscribe E-mail:<br>
+                  <br>
+                  <input name="email" type="text" size="12" class="txtbox">
+                  <br> <br>
+                  <input type="submit" name="Submit" value="Go" class="button">
+                  </p>
+                  </fieldset>
+      </form>
+
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+    </script>
+      <script>
+    $(document).ready(function(){
+        $("div").click(function(){
+            $(this).hide();
+        });
+    });
+     </script>
+  </body>
+</html>
