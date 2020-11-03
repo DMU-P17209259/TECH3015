@@ -1,0 +1,23 @@
+
+
+#score {
+  font-size: 20px;
+}
+
+#time {
+  font-size: 20px;
+}
+
+img {
+  width: 100%;
+  display: none;
+}
+
+.game {
+height: 100%;
+width: 100%;
+position: absolute;
+background-color: pink;
+display: none;
+margin: 0;
+}
